@@ -5,7 +5,7 @@ import { data } from '../../assets/data';
 const Quiz = () => {
 
     let [index, setIndex] = useState(0);
-    let [question, setQuestion] = useState()
+    let [question, setQuestion] = useState(data[index]);
 
   return (
     <div className='container'>
