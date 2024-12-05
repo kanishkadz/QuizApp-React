@@ -7,6 +7,7 @@ const Quiz = () => {
     let [index, setIndex] = useState(0);
     let [question, setQuestion] = useState(data[index]);
     let [lock, setLock] = useState(false);
+    let [score, setScore] = useState(0);
 
     let Option1 = useRef(null);
     let Option2 = useRef(null);
@@ -19,13 +20,18 @@ const Quiz = () => {
         if (lock === false) {
             if (question.ans===ans) {
                 e.target.classList.add("correct");  
-                setLock(true);          
+                setLock(true);
+                setScore(prev=>prev+1);          
             } else {
                 e.target.classList.add("wrong");
                 setLock(true);
                 option_array[question.ans-1].current.classList.add("current");
             }
         }
+    }
+
+    const next = () => {
+
     }
 
   return (
