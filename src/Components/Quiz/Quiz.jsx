@@ -8,10 +8,10 @@ const Quiz = () => {
         <hr />
         <h2>Which device is required for Internet connection?</h2>
         <ul>
-            <li></li>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Modem</li>
+            <li>Router</li>
+            <li>LAN Cable</li>
+            <li>Pen Drive</li>
         </ul>
     </div>
   )
