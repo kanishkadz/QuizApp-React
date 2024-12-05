@@ -8,6 +8,11 @@ const Quiz = () => {
     let [question, setQuestion] = useState(data[index]);
     let [lock, setLock] = useState(false);
 
+    let Option1 = useRef(null);
+    let Option2 = useRef(null);
+    let Option3 = useRef(null);
+    let Option4 = useRef(null);
+
     const checkAns = (e,ans) => {
         if (lock === false) {
             if (question.answer===ans) {
