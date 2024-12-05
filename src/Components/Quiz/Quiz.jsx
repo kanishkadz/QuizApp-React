@@ -68,6 +68,7 @@ const Quiz = () => {
         <h2>
             Your Score: {score} out of {data.length}
         </h2>
+        <button>Reset</button>
     </div>
   )
 }
