@@ -11,9 +11,11 @@ const Quiz = () => {
     const checkAns = (e,ans) => {
         if (lock === false) {
             if (question.answer===ans) {
-                e.target.classList.add("correct");            
+                e.target.classList.add("correct");  
+                setLock(true);          
             } else {
                 e.target.classList.add("wrong");
+                setLock(true);
             }
         }
     }
