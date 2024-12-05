@@ -1,5 +1,7 @@
 ## 🧠 Quiz App
+
 This project is a quiz app developed using React, designed to provide users with an engaging and interactive way to test their knowledge. The app fetches questions dynamically and provides real-time feedback to enhance the user experience.
+
 ---
 
 ## 📚 Features
