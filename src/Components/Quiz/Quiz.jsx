@@ -46,7 +46,7 @@ const Quiz = () => {
             <li ref={Option4} onClick={(e)=>{checkAns(e,4)}}>{question.option4}</li>
         </ul>
         <button>Next</button>
-        <div className="index">1 of 5 questions</div>
+        <div className="index">{index+1} of {data.length} questions</div>
     </div>
   )
 }
