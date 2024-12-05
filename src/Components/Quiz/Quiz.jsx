@@ -13,14 +13,17 @@ const Quiz = () => {
     let Option3 = useRef(null);
     let Option4 = useRef(null);
 
+    let option_array = [Option1, Option2, Option3, Option4];
+
     const checkAns = (e,ans) => {
         if (lock === false) {
-            if (question.answer===ans) {
+            if (question.ans===ans) {
                 e.target.classList.add("correct");  
                 setLock(true);          
             } else {
                 e.target.classList.add("wrong");
                 setLock(true);
+                option_array[question.ans]
             }
         }
     }
