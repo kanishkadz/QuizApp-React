@@ -34,7 +34,12 @@ const Quiz = () => {
         if (lock===true) {
             setIndex(++index);
             setQuestion(data[index]);
-            setLock(false);            
+            setLock(false); 
+            option_array.map((option) => {
+                option.current.classList.remove("wrong");
+                option.current.classList.remove("correct");
+                return null;
+            })           
         }
     }
 
