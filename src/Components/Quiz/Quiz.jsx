@@ -65,6 +65,9 @@ const Quiz = () => {
         <div className="index">{index+1} of {data.length} questions</div>
         </>
         }
+        <h2>
+            Your Score: {score} out of {data.length}
+        </h2>
     </div>
   )
 }
