@@ -6,12 +6,15 @@ const Quiz = () => {
 
     let [index, setIndex] = useState(0);
     let [question, setQuestion] = useState(data[index]);
+    let [lock, setLock] = useState(false);
 
     const checkAns = (e,ans) => {
-        if (question.answer===ans) {
-            e.target.classList.add("correct");            
-        } else {
-            e.target.classList.add("wrong");
+        if (lock === false) {
+            if (question.answer===ans) {
+                e.target.classList.add("correct");            
+            } else {
+                e.target.classList.add("wrong");
+            }
         }
     }
 
